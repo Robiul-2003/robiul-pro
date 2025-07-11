@@ -238,6 +238,91 @@ margin-left:480px;
     font-weight: bold;
     padding-top:100px;
 }
+
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top:0px;
+    gap: 20px;
+    width: 400px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #4E47FF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width:420px;
+    height:50px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #FF5733;
+}
+.loGO{
+    width:1440px;
+    height:424px;
+    margin: auto;
+    background-color:#FFFFFF ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.YOUr{
+    font-size:100px;
+    font-weight: bold;
+    color:#c98779;
+   
+}
+.R{
+    color:#8987A1;
+}
+.five {
+    display: flex;
+    justify-content: center;
+    gap:40px; 
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+.five ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.five ul li {
+    font-size: 16px;
+    font-weight: bold;
+    color: #8987A1;
+    cursor: pointer;
+}
+
+
 </style>
 
 <body>
@@ -328,29 +413,32 @@ margin-left:480px;
     <img class="dine" src="./Assets/wc-big.png">
 </div>
 <div class="Email">
+  <div>
     <h1 class="LET">Let's get in <br> Touch</h1>
-<form action="">
-    <input type="text" name="" id="" placeholder="example@email.com">
-    <input type="text" name="" id="" placeholder="Full name">
-    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
-    <input type="submit" value="submit">
-</form>
+  </div>
 
+  <form class="contact-form" action="">
+    <input type="email" name="email" placeholder="example@email.com" required>
+    <input type="text" name="name" placeholder="Full Name" required>
+    <textarea name="message" cols="30" rows="5" placeholder="Write your message..." required></textarea>
+    <input type="submit" value="Submit">
+  </form>
 </div>
 
 <div class="loGO">
 <h1 class="YOUr">LOGo</h1>
 <h4 class="R">Ready to elevate you online presence? contact us today to discuss<br>you project and discover how we bring vision to life.</h4>
-<h5 class="five">
+<div class="five">
     <ul>
         <li>Home</li>
         <li>About</li>
         <li>How it works</li>
+        <li>Pricing</li>
+        <li>Contact</li>
     </ul>
-</h5>
 </div>
 
-<p>robiul</p>
+
     </footer>
 </body>
 </html>
